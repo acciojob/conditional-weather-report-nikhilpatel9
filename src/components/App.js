@@ -1,20 +1,17 @@
 
 import React from "react";
 import './../styles/App.css';
+import WeatherDisplay from "./WeatherDisplay";
 
 const App = () => {
  
-  const weather = { temperature: 25, conditions: "Sunny" };
-  const isHot = weather.temperature > 20;
-  const tempColor = { color: isHot ? "red" : "blue" };
+   const [weather] = useState({ temperature: 25, conditions: "Sunny" });
+
+ 
 
   return (
     <div>
-      <p>
-        Temperature: <span style={tempColor}>{weather.temperature}°C</span>
-      </p>
-      <p >Conditions: {weather.conditions}</p>
-      
+      <WeatherDisplay weather={weather}/>
     </div>
   );
 
