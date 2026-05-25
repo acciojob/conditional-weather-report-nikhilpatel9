@@ -8,8 +8,8 @@ const App = () => {
   const tempColor= { color: isHot ? "red" : "blue" };
   return (
     <div>
-        <p >Conditions: <span  >{weather.conditions}</span></p>
-          <p>
+        <p style={tempColor}>Conditions: {weather.conditions}</p>
+        <p>
         Temperature: <span style={tempColor}>{weather.temperature}°C</span>
       </p>
     </div>
