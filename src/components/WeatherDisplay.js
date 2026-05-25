@@ -7,7 +7,7 @@ const WeatherDisplay = ({ weather }) => {
   return (
     <div>
         <p data-testid="temperature">
-        Temperature: <span style={tempColor}>{weather.temperature}°C</span>
+        Temperature: <span style={tempColor}>{weather.temperature}</span>
       </p>
       <p>Conditions: {weather.conditions}</p>
      
